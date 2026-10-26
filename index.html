@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' data: blob:; connect-src 'self' data: blob:; worker-src 'self' blob:; manifest-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Fancy Text — Bold, Italic, Script &amp; Cool Fonts to Copy for Bios | S3eidat Tools</title>
+<meta name="description" content="Type once and copy your text in 28 Unicode styles: bold, italic, script, fraktur, double-struck, monospace, circled, squared, small caps, upside down, strikethrough and more. Free and private.">
+<meta property="og:title" content="Fancy Text — bold, italic, script and more for bios">
+<meta property="og:description" content="28 copy-and-paste Unicode text styles. Runs 100% in your browser.">
+<meta property="og:image" content="screenshot.png">
+<link rel="icon" href="kit/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="kit/kit.css">
+<link rel="stylesheet" href="app.css">
+<script src="kit/kit.js"></script>
+</head>
+<body data-tool="fancy-text">
+<main class="s3-main">
+  <section class="s3-hero">
+    <h1>Fancy Text</h1>
+    <p>Type once, copy it in 28 styles for your bio, posts or name. These are Unicode characters, not fonts, so they paste anywhere that shows Unicode.</p>
+  </section>
+
+  <section class="card ft-input">
+    <label for="input" class="field">Your text</label>
+    <div class="row mt">
+      <input type="text" class="input grow ft-in" id="input" dir="auto" autocomplete="off" placeholder="Type something…" maxlength="500">
+      <button class="btn ghost" id="clear"><svg class="i"><use href="#i-x"/></svg>Clear</button>
+    </div>
+  </section>
+
+  <section class="card mt">
+    <ul class="ft-list" id="list" aria-live="polite"></ul>
+  </section>
+
+  <section class="card mt">
+    <h2>Before you use it</h2>
+    <p class="muted ft-note">Screen readers may read these characters one by one (“mathematical bold capital S…”) or skip them, and search engines may not match them to normal words. Use them for decoration, not for names, links or anything people need to find or read. Only English letters and digits change; Arabic and other scripts stay as they are.</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
